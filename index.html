@@ -39,6 +39,11 @@ a{color:#1f4d41}
 mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 .person h3{margin:0 0 4px;font-size:17px}
 .person .bio{margin:0 0 10px;color:var(--ink);font-size:14px}
+.tl{list-style:none;padding:0;margin:0}
+.tl li{position:relative;padding:0 0 14px 18px;border-left:2px solid var(--line);margin:0}
+.tl li:last-child{border-left-color:transparent;padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--s1)}
+.tl .d{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:2px}
 @media(max-width:540px){.row{grid-template-columns:1fr}}
 </style>
 </head>
@@ -71,12 +76,31 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <details open>
 <summary class="sh"><h2>Формат</h2></summary>
 <div class="sb">
-<div class="row"><div class="l">Type</div><div>Pre-call · Is Anything Real?</div></div>
-<div class="row"><div class="l">When</div><div>September 10, 2026 · 12:30 PT</div></div>
-<div class="row"><div class="l">Local</div><div>21:30 CEST</div></div>
+<div class="row"><div class="l">Type</div><div>Pre-call · Is Anything Real? — в приглашении назван «Podcast Qualifier»</div></div>
+<div class="row"><div class="l">When</div><div>September 10, 2026 · 12:30 PT · 21:30 CEST</div></div>
+<div class="row"><div class="l">Duration</div><div><mark>15 минут</mark> — в календарном инвайте стоит 12:30–12:45 PDT</div></div>
 <div class="row"><div class="l">Platform</div><div>Zoom · <a href="https://us06web.zoom.us/j/87545514011?pwd=6tYU4DgUMzd5uExErbOXMQdO4h956n.1">us06web.zoom.us/j/87545514011</a></div></div>
 <div class="row"><div class="l">Password</div><div>194112</div></div>
-<div class="row"><div class="l">Goal</div><div>Short intro. Agree topics and lock recording date/time.</div></div>
+<div class="row"><div class="l">Goal</div><div>Короткое знакомство. Обсудить темы и согласовать дату/время записи.</div></div>
+<p class="warn">Инвайт — на 15 минут, а не на час. Значит: одна сильная мысль, один пруф, одна дата. Длинную биографию и разбор продукта оставить на запись.</p>
+</div>
+</details>
+</section>
+
+<section>
+<details open>
+<summary class="sh"><h2>История коммуникаций</h2></summary>
+<div class="sb">
+<ul class="tl">
+<li><span class="d">Jul 13 · 09:57 · еженедельный статус 25/8 PR</span>«Засекьюрили подкаст Is Anything Real, Pre-call в сентябре, сверяем календари». Подкаст подтверждён с их стороны, идёт подбор даты.</li>
+<li><span class="d">Jul 13 · 10:00 · Notion, PR-трекер</span>Заведена карточка «Is Anything Real Podcast — Seva guest». Status: Pre-call · Format: Online · Speaker: Seva · ICP: Eng · Topic Focus: Marketing for ICP. Заметка: «Засекьюрили подкаст. Pre-call в сентябре, сверяем календари».</li>
+<li><span class="d">Jul 13 · 16:20 UTC · письмо от хоста</span>Календарное приглашение с адреса <b>adam@adamwbarney.com</b> на seva.ustinov@plurio.ai: <mark>«[Podcast Qualifier with Adam W. Barney] Is Anything Real? @ Thu Sep 10, 2026 12:30pm–12:45pm (PDT)»</mark>. Единственное письмо от Adam на сегодня — переписки как таковой не было, только инвайт.</li>
+<li><span class="d">Jul 13 · 17:49 · Эля (25/8 PR) в чат</span>«Забронировала pre-call с подкастом Is Anything Real? на 10 сентября на 12:30. Это короткое знакомство и на нем обсудим темы и дату/время записи. Приглашение уже у Севы в календаре на почте, ближе к делу пришлю инфу для подготовки».</li>
+<li><span class="d">Jul 15 · events-store</span>Событие зафиксировано в реестре: «Is Anything Real — засекьюрен, pre-call 10 сен», owner Ваня / PR (25/8), added_by Эля.</li>
+<li><span class="d">Jul 20 · еженедельный статус 25/8 PR</span>«Забронировали pre-call подкаста Is Anything Real на 10 сентября» — в том же статусе бронь календарей для The CMO Club и Truth about Social Ads.</li>
+<li><span class="d">Sep 9 · сегодня</span>Пришла инфа для подготовки: ссылка на Zoom, пароль, описание, наша заявка (insight / proof / takeaway).</li>
+</ul>
+<p class="src">Sources: PR-чат 25/8 (weekly #еженедельный_статус 13/07 и 20/07, сообщение Эли 13/07), Notion PR-трекер, events-store/events.jsonl, Gmail thread 19f5c475bca5bc3d.</p>
 </div>
 </details>
 </section>
@@ -86,8 +110,12 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <summary class="sh"><h2>О подкасте</h2></summary>
 <div class="sb">
 <p>Leadership podcast hosted by Adam W. Barney, featuring founders and operators who share practical, results-driven insights on positioning, marketing, community, energy management, and influence.</p>
-<p>Show line (Apple): Reality-First Leadership for builder-leaders who want outcomes, not optics. Weekly episodes: a Reality Check, a Proof Stack (inputs → actions → outcomes), and one EnergyOS habit for the week.</p>
-<p>Listen: <a href="https://podcasts.apple.com/us/podcast/is-anything-real/id1819797580">Apple Podcasts</a> · <a href="https://isanythingreal.adamwbarney.com/">isanythingreal.adamwbarney.com</a></p>
+<p>Формулировка самого шоу: Reality-First Leadership для builder-leaders, которым нужны outcomes, а не optics. Каждый выпуск собран по одной схеме — <b>Reality Check</b> (мысль) → <b>Proof Stack</b> (inputs → actions → outcomes) → <b>одна привычка EnergyOS</b> на неделю. «Specifics over slogans».</p>
+<div class="row"><div class="l">Выходит</div><div>Еженедельно, среда 12:00 ET · ~79 выпусков, стартовал в апреле 2025</div></div>
+<div class="row"><div class="l">Длина</div><div>Обычно 20–28 минут, docu-style видео + аудио</div></div>
+<div class="row"><div class="l">Рейтинг</div><div>5.0 (13 оценок) в Apple Podcasts</div></div>
+<div class="row"><div class="l">Гости</div><div>Основатели и операторы: Dr. Al Philip-Neri (Cohesion HQ), Kyle Gray (The Story Engine), Corey Poirier (bLU Talks), Nico Lang (Aligre), Noah Ellis (Ofland)</div></div>
+<p style="margin-top:10px">Слушать: <a href="https://podcasts.apple.com/us/podcast/is-anything-real/id1819797580">Apple Podcasts</a> · <a href="https://isanythingreal.adamwbarney.com/">isanythingreal.adamwbarney.com</a></p>
 </div>
 </details>
 </section>
@@ -98,14 +126,40 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <div class="sb">
 <div class="person">
   <h3><a href="https://www.linkedin.com/in/adamwbarney/">Adam W. Barney</a></h3>
-  <p class="bio">Transition Leadership Coach for founders and executives. Author of <i>Make Your Own Glass Half Full</i>. Creator of EnergyOS. Host of Is Anything Real? Boston-based. Public pitch: operating rhythms that hold under pressure — 20+ years in global agencies, high-growth tech, Fortune-level clients.</p>
+  <p class="bio">Transition Leadership Coach для основателей и руководителей. Автор книги <i>Make Your Own Glass Half Full</i>, создатель системы EnergyOS, ведущий Is Anything Real? с апреля 2025. Бостон, 13 000+ подписчиков в LinkedIn. Его позиционирование: не мотивационный коучинг, а «installation» — операционные ритмы, которые держатся под давлением.</p>
 </div>
-<p><b>Small talk</b></p>
+
+<p class="idea"><b>Главное, что нужно знать:</b> Adam — бывший перформанс-маркетолог. Director, Paid Search Strategy в <b>Microsoft</b> (портфель $25M paid search), Senior Manager глобального digital-маркетинга и demand gen в <b>Akamai</b> ($100M+ pipeline), до этого 8,5 лет в <b>DigitasLBi</b> — от аналитика до associate director. Он знает медиабаинг изнутри, объяснять базу не нужно.</p>
+
+<p><b>Чем занят сейчас (параллельно)</b></p>
 <ul>
-<li>Show thesis is “receipts over slogans” — our application already fits: insight + proof stack + one weekly habit.</li>
-<li>He asks guests for a sharp insight and a spicy take. Bring one, don’t pitch the product first.</li>
-<li>Site: <a href="https://adamwbarney.com/">adamwbarney.com</a></li>
+<li><b>Transition Leadership Coach</b> (своя практика с 2022) — 300+ руководителей, работа на переходных этапах: новая роль, выросшие ставки, старый плейбук не держит</li>
+<li><b>Comcast RISE — business coach</b> с 2023: коучил 300+ основателей микробизнесов по гранту</li>
+<li><b>Founder &amp; Board Director, LonelinessAction USA</b> — бостонское отделение глобальной некоммерческой федерации</li>
+<li>Ангел-инвестор <b>Bison Venture Partners</b>, core member <b>Underscore VC</b>, innovation council <b>Scroobious</b>, ментор <b>First Round Fast Track</b></li>
+<li>Сертификат HBS <b>Power and Influence for Positive Impact</b> (2025), BS Management — Bentley University</li>
+<li>Рассылка <b>Plugged In Leadership</b></li>
 </ul>
+<p class="src">Sources: LinkedIn-профиль Adam W. Barney (опыт, образование, посты), Apple Podcasts, adamwbarney.com.</p>
+</div>
+</details>
+</section>
+
+<section>
+<details open>
+<summary class="sh"><h2>Small talk — за что зацепиться</h2></summary>
+<div class="sb">
+<ul>
+<li><b>Оба из paid search.</b> Adam вёл $25M в Microsoft и $100M+ pipeline в Akamai, Сева — агентство на 100+ человек и $500M+ годового спенда. Разговор двух людей, которые руками правили ставки, а не про «AI в маркетинге» вообще.</li>
+<li><b>Его пост «Tokenmaxxing is over» (29 июля)</b> — почти наш тезис: компании два года заливали AI во всё подряд, «дропнули мощные инструменты в сломанные ритмы», отдача не сошлась с инвестициями. Наша заявка ложится сюда один в один.</li>
+<li><b>«AI amplifies whatever operating system already exists underneath it. Strong systems get stronger. Broken systems get faster»</b> (пост 12 августа). Хорошая точка входа: у нас ровно про это — сначала выкинуть повторяющуюся операционку, потом ускорять.</li>
+<li><b>«Relationships First. AI Second»</b> — его подпись под AI-постами. Пост 2 сентября про иск музыкантов к Suno и вопрос «кому принадлежит то, что делает работу узнаваемо твоей». Если захочется острого — тут его любимая территория.</li>
+<li><b>Он не любит слово burnout</b>, называет это «flameout»: пожар начинается с искры. Его связка — Leadership Debt / Belonging Debt / Meaning Debt / Time Debt. Рядом ложится наша история: 40% команды сменили роли за 12 недель трансформации.</li>
+<li><b>Требует пруфов.</b> Его фраза из выпуска 74: «If you can't name the inputs, actions, and outcomes, the story is just a spell». Цифры $500M и «до 90% рутины» — это ровно тот формат, который он ждёт.</li>
+<li><b>Климат и деньги.</b> Fellow Terra.do, участвует в Sphere (k)ollective — про то, куда инвестируются пенсионные деньги. Неожиданная для маркетингового подкаста тема, но для него важная.</li>
+<li><b>Бостон</b>, Bentley University, HBS-сертификат. Был тренером в Digitas UNICorn Incubator.</li>
+</ul>
+<p class="src">Sources: посты Adam в LinkedIn за июль–сентябрь 2026, разделы Experience и Education его профиля.</p>
 </div>
 </details>
 </section>
@@ -114,10 +168,10 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 
 <section>
 <details open>
-<summary class="sh"><h2>До записи / вход</h2></summary>
+<summary class="sh"><h2>Вход</h2></summary>
 <div class="sb">
-<p class="pre">Join Zoom a few minutes early. Meeting ID 875 4551 4011 · password 194112.</p>
-<p class="pre">This is a pre-call, not the recording — short acquaintance, then topics and a date.</p>
+<p class="pre">Zoom за пару минут до начала. Meeting ID 875 4551 4011 · пароль 194112.</p>
+<p class="pre">Это не запись, а квалификация на 15 минут: короткое знакомство → темы → дата записи.</p>
 </div>
 </details>
 </section>
@@ -126,8 +180,8 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <details open>
 <summary class="sh"><h2>Интро (кто ты + компания)</h2></summary>
 <div class="sb">
-<p class="idea">“I’m Seva — 20+ years in performance marketing. Built an agency, then Elly Analytics, now Plurio: an AI agent that automates media buying for teams spending $500K+ a month on ads. It’s managing $500M+ a year in spend, and my own 40-person team runs AI-first.”</p>
-<p>Company on the application: <b>Plurio / Plurio.ai</b></p>
+<p class="idea">“I’m Seva — 20+ years in performance marketing. Built an agency past 100 people, then Elly Analytics, and now Plurio: an AI agent that automates media buying for teams spending $500K+ a month on ads. It’s managing $500M+ a year in spend, and my own 40-person team runs AI-first.”</p>
+<p>Adam сам из paid search — можно сразу переходить к сути, без объяснения, что такое атрибуция.</p>
 </div>
 </details>
 </section>
@@ -139,7 +193,7 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <summary class="sh"><h2>Их структура эфира</h2></summary>
 <div class="sb">
 <ol>
-<li>Host introduces the guest and his business</li>
+<li>Host is introducing the guest and his business</li>
 <li>Live dialogue about business/product info and business insights</li>
 </ol>
 <p class="src">Topics can be discussed at pre-call.</p>
@@ -149,7 +203,7 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 
 <section>
 <details open>
-<summary class="sh"><h2>Our application — что нести на преколл</h2></summary>
+<summary class="sh"><h2>Наша заявка — что нести на преколл</h2></summary>
 <div class="sb">
 <p><b>Key insight</b></p>
 <p class="idea">“AI won't replace marketers. It will replace repetitive marketing operations.”</p>
@@ -157,7 +211,7 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <p class="idea">“We trained AI on thousands of historical marketing decisions across enterprise ad accounts, replacing manual reporting and analysis. Teams now manage over $500M in annual ad spend while cutting routine operational work by up to 90%.”</p>
 <p><b>Actionable takeaway</b></p>
 <p class="idea">“Start every week by eliminating one repetitive task instead of adding one new responsibility. If a process happens every week, teach it to AI instead of repeating it yourself.”</p>
-<p class="warn">This maps onto his usual episode shape: Reality Check (insight) → Proof Stack (the $500M / 90% line) → one habit for the week (kill one recurring task). Offer these as the spine of the recording, then let him pick the spicy angle.</p>
+<p class="warn">Эти три блока идеально садятся на его схему выпуска: Reality Check → Proof Stack → одна привычка на неделю. Так и предложить — как готовый костяк записи, а острый угол пусть выберет сам.</p>
 </div>
 </details>
 </section>
@@ -167,9 +221,9 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <summary class="sh"><h2>Что согласовать на звонке</h2></summary>
 <div class="sb">
 <ul>
-<li>Topics for the live dialogue — start from the three application lines above</li>
-<li>Recording date and time</li>
-<li>Format: ~20 min, docu-style, no pitch</li>
+<li>Темы для live dialogue — отталкиваться от трёх блоков заявки</li>
+<li>Дата и время записи</li>
+<li>Формат: ~20–25 минут, docu-style, без питча</li>
 </ul>
 </div>
 </details>
@@ -191,9 +245,10 @@ mark{background:var(--hl);color:inherit;padding:0 .12em;border-radius:2px}
 <details open>
 <summary class="sh"><h2>Для справки</h2></summary>
 <div class="sb">
-<div class="row"><div class="l">LinkedIn</div><div><a href="https://www.linkedin.com/in/adamwbarney/">linkedin.com/in/adamwbarney</a></div></div>
+<div class="row"><div class="l">Host</div><div><a href="https://www.linkedin.com/in/adamwbarney/">linkedin.com/in/adamwbarney</a> · adam@adamwbarney.com</div></div>
 <div class="row"><div class="l">Listen</div><div><a href="https://podcasts.apple.com/us/podcast/is-anything-real/id1819797580">Apple · Is Anything Real?</a></div></div>
 <div class="row"><div class="l">Zoom</div><div><a href="https://us06web.zoom.us/j/87545514011?pwd=6tYU4DgUMzd5uExErbOXMQdO4h956n.1">Join meeting</a> · password 194112</div></div>
+<div class="row"><div class="l">PR</div><div>25/8 PR — Эля (бронь и коммуникация с хостом)</div></div>
 </div>
 </details>
 </section>
